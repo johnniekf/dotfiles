@@ -2,4 +2,6 @@
 !.gitignore
 !nvim/
 !nvim/**
-!p10k
+!p10k/
+!wezterm/
+!wezterm/**
