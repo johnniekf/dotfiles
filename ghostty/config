@@ -1,0 +1,77 @@
+# ─────────────────────────────────────────────
+#  Ghostty config — Catppuccin Frappé
+#  Place at: ~/.config/ghostty/config
+#  NOTE: After any change to background-opacity
+#        you MUST fully quit & relaunch Ghostty.
+#        Cmd+Q on macOS, not just close window.
+# ─────────────────────────────────────────────
+
+# ── Shell ─────────────────────────────────────
+# Force zsh regardless of macOS login shell setting
+command = /bin/zsh
+shell-integration = zsh
+
+# ── Font ──────────────────────────────────────
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
+font-feature = calt
+font-feature = liga
+
+# ── Transparency ──────────────────────────────
+background-opacity = 0.95
+background-blur-radius = 20
+
+# ── Window ────────────────────────────────────
+window-padding-x = 12
+window-padding-y = 10
+
+# macOS: transparent titlebar lets opacity show through the whole window
+macos-titlebar-style = transparent
+
+# ── Cursor ────────────────────────────────────
+cursor-style = block
+cursor-style-blink = true
+
+# ── Scrollback ────────────────────────────────
+scrollback-limit = 10000
+
+# ── Bell ──────────────────────────────────────
+bell-features = no-attention,no-title,no-audio
+
+# ── Catppuccin Frappé palette ─────────────────
+background  = #303446
+foreground  = #c6d0f5
+cursor-color      = #f2d5cf
+cursor-text       = #303446
+selection-background = #626880
+selection-foreground = #c6d0f5
+
+# Normal colours (0-7)
+palette = 0=#51576d
+palette = 1=#e78284
+palette = 2=#a6d189
+palette = 3=#e5c890
+palette = 4=#8caaee
+palette = 5=#f4b8e4
+palette = 6=#81c8be
+palette = 7=#b5bfe2
+
+# Bright colours (8-15)
+palette = 8=#626880
+palette = 9=#e78284
+palette = 10=#a6d189
+palette = 11=#e5c890
+palette = 12=#8caaee
+palette = 13=#ca9ee6
+palette = 14=#99d1db
+palette = 15=#a5adce
+
+# ── Keybindings ───────────────────────────────
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+keybind = ctrl+shift+equal=increase_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+shift+zero=reset_font_size
+keybind = ctrl+shift+n=new_window
